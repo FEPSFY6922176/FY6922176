@@ -14,5 +14,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+  <head>
+  <h3 id="Abstract">Abstract</h3>
+    <p class=ex1>
+      <pre id="Abstract_InText">
+Resonance plays a critical role in the performance, safety, and longevity of modern infrastructure. When a structure’s natural frequency aligns with external dynamic 
+forces (such as wind, seismic activity, or human motion), which the resulting amplification can lead to catastrophic failure or, when properly controlled, enhanced resilience. 
+This article examines the evolution of resonance awareness and mitigation strategies in civil engineering through notable historical and contemporary examples. 
+Early disasters, including the 1995 Great Hanshin-Awaji (Kobe) Earthquake in Japan, revealed the destructive potential of resonance, leading to the adoption of aerodynamic 
+deck designs, tuned mass dampers, and seismic isolation systems. Japan’s post-Kobe reconstruction ushered in a global shift toward performance-based design, where resonance 
+is analyzed and controlled rather than avoided. Successes such as the Akashi Kaikyō Bridge, Tokyo Skytree, and Taipei 101 demonstrate how tuned and base-isolated systems 
+now safeguard against wind and seismic excitation. Through comparative analysis of failed and successful designs, this study highlights how resonance—once a cause of 
+collapse—has become an essential design parameter for resilient, adaptive infrastructure in earthquake- and wind-prone regions worldwide.
+      </pre>
+  </p>
+</head>
+
+
+
+  
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- Last commit time display -->
+  
+<div id="last-updated">Loading last update time...</div>
+<!-- Verify Button -->
+<button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+    Verify Last Modified Time
+</button>
+<script>
+    async function getLastUpdatedTime() {
+        const username = 'FEPSFY6922176';
+        const repo = 'FY6922176';
+       
+        const url = `https://api.github.com/repos/${username}/${repo}/commits`;
+        try {
+            const response = await fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/vnd.github.v3+json',
+                }
+            });
+            if (!response.ok) {
+                throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
+            }
+            const commits = await response.json();
+            if (commits && commits.length > 0) {
+                const lastCommitDate = new Date(commits[0].commit.committer.date);
+               
+                // Displaying the time on load
+                document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
+            } else {
+                document.getElementById('last-updated').innerText = 'No commits found in the repository.';
+            }
+        } catch (error) {
+            console.error('Error fetching the last updated time:', error);
+            document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
+        }
+    }
+    // Function to verify the last update time by re-fetching it from the API
+    async function verifyLastUpdatedTime() {
+        document.getElementById('last-updated').innerText = 'Verifying...';
+        await getLastUpdatedTime();
+        alert("Last modified time has been successfully verified from GitHub API.");
+    }
+    // Initial load to display the time on page load
+    window.onload = getLastUpdatedTime;
+</script>
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
+<!-- ////////////////////////////// Word count function ///////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
+<!-- Placeholder for total word count -->
+  
+<p id="totalWordCount"></p>
+<hr>
+<script>
+  // Function to calculate and display word count for a specified section
+  function displayWordCount(sectionId, outputId) {
+    // Get the text content from the specified section
+    const text = document.getElementById(sectionId).textContent;
+    // Split text into words based on spaces and filter out any empty strings
+    const wordArray = text.trim().split(/\s+/);
+    // Count the words
+    const wordCount = wordArray.length;
+    // Return the word count for summing purposes
+    return wordCount;
+  }
+  // Function to calculate and display total word count from selected sections
+  function displayTotalWordCount() {
+    // Calculate word count for each section and accumulate the total
+    const AbstractCount = displayWordCount("Abstract_InText");
+    // Calculate the sum of all selected sections
+    const totalWordCount = AbstractCount;
+    // Display the total word count
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+  // Run the function for specific sections and display total count when the page loads
+  window.onload = displayTotalWordCount;
+</script>
 
 </html>
