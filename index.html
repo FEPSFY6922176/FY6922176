@@ -228,8 +228,8 @@ In: Proc. 17th Internat. Conf. on Machine Learning. Morgan Kaufman, Stanford, CA
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Abstract_InText");
-    const AnalysisCount = displayWordCount("Reference_InText");
+    const AbstractCount = displayWordCount("Abstract_InText");
+    const ReferenceCount = displayWordCount("Reference_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = AbstractCount + ReferenceCount;
     // Display the total word count
