@@ -56,24 +56,75 @@ li a:hover {
 </body>
 
   <!-- Abstract -->
-  
+
+  <body>
   <head>
-  <h3 id="Abstract" style="font-size:35%; font-family:courier"><b>Abstract</b></h3>
-    <p id="Abstract_InText" style="font-family:arial; font-size:20%">
+  <h3 id="Abstract" style="font-size:110%; font-family:courier"><b>Abstract</b></h3>
+    <p id="Abstract_InText" style="font-family:arial; font-size:75%">
         <img src="akachikaikyobridge.png" alt="Akachi Kaikyo Bridge.png" style="float:right;width:450px; height:320px; margin-left:20px">
 Resonance plays a critical role in the performance, safety, and longevity of modern infrastructure. When a structure’s natural frequency aligns with external dynamic 
 forces (such as wind, seismic activity, or human motion), which the resulting amplification can lead to catastrophic failure or, when properly controlled, enhanced resilience. 
 This article examines the evolution of resonance awareness and mitigation strategies in civil engineering through notable historical and contemporary examples. 
-Early disasters, including the 1995 Great Hanshin-Awaji (Kobe) Earthquake in Japan, revealed the destructive potential of resonance, leading to the adoption of aerodynamic 
-deck designs, tuned mass dampers, and seismic isolation systems. Japan’s post-Kobe reconstruction ushered in a global shift toward performance-based design, where resonance 
-is analyzed and controlled rather than avoided. Successes such as the Akashi Kaikyō Bridge, Tokyo Skytree, and Taipei 101 demonstrate how tuned and base-isolated systems 
-now safeguard against wind and seismic excitation. Through comparative analysis of failed and successful designs, this study highlights how resonance—once a cause of 
-collapse—has become an essential design parameter for resilient, adaptive infrastructure in earthquake- and wind-prone regions worldwide.
+Early disasters, including the 1995 Kobe Earthquake in Japan, which had forsakened Japan in devastation, ultimately lead to the adoption of aerodynamic 
+deck designs, tuned mass dampers, and seismic isolation systems; Japan’s post-Kobe reconstruction ushered in a global shift toward performance-based design, where resonance 
+is analyzed and controlled. This includes successes such as the Akashi Kaikyō Bridge, Tokyo Skytree, and Taipei 101, demonstrating how tuned and base-isolated systems 
+now safeguard against wind and seismic excitation. Through comparative analysis of failed and successful designs, this study highlights how monitoring resonance 
+has become an essential design parameter for resilient, adaptive infrastructure in earthquake and wind-prone regions worldwide.
   </p>
 </head>
+  </body>
+  <hr>
 
+<!-- Introduction-->
+  
+<body>
+  <head>
+  <h3 id="Introduction" style="font-size:110%; font-family:courier"><b>Introduction</b></h3>
+    <p id="Introduction_InText" style="font-family:arial; font-size:75%">
+      <pre>
+Resonance occurs when a structure is exposed to repeated vibrations at a frequency that matches its own <b>natural frequency</b> (the rate at which it naturally tends to move 
+back and forth). When this happens, even small vibrations can grow much stronger, leading to dangerous oscillations. Every structure has one or more natural frequencies 
+that depend on its shape, materials, and stiffness. For an example, a tall, flexible building will have a much lower natural frequency compared to a short, stiff structure. 
+If the external forces — such as wind gusts, earthquakes, or traffic — occur at or near these frequencies, resonance can amplify the motion, sometimes enough to cause 
+cracking, or even collapse.
 
+Because of this, engineers spend a great deal of time measuring and monitoring vibration behaviour during and after construction. The most common method is called <b>operational
+modal analysis (OMA)</b><sup>[1]</sup>, where sensors are placed on a bridge or building to record its motion under normal conditions such as traffic, wind, or minor tremors. 
+These recordings are then analysed to identify the structure’s natural frequencies, mode shapes (how it bends or twists), and damping ratios (how quickly the motion dies out). 
+Modern bridges often include permanent vibration sensors or accelerometers built into the structure, allowing engineers to monitor resonance in real time. This kind of system, 
+known as <b></b>structural health monitoring (SHM)</b><sup>[2]</sup>, helps detect changes over time; for instance, if a bridge becomes slightly weaker or its frequency shifts 
+due to damage or aging.
 
+During construction, engineers also perform forced-vibration tests or ambient vibration tests to ensure that the measured natural frequencies match design predictions.
+International standards such as <b>ISO 4866</b><sup>[1]</sup> describe how to measure and interpret these vibrations safely. From further studies, a new method was
+introduced: the <b>frequency-domain decomposition (FDD)</b><sup>[3]</sup> method, which is widely used to extract modal data from field measurements. Research by <i>Fujino</i> and <i>Siringoringo</i> 
+(2013)<sup>[4]</sup> on bridge monitoring in Japan demonstrates how continuous vibration measurements can track changes in bridge stiffness and detect potential resonance problems before 
+they become dangerous. In practice, this means engineers can “tune” a structure during or after construction — for example, by adding dampers or adjusting stiffness — 
+to prevent resonance with expected environmental forces.
+        </pre>
+  </p>
+</head>
+  </body>
+  <hr>
+
+<!--References-->
+  
+  <h3 id="References style="font-size:110%; font-family:courier"><i>References</i></h3>
+
+<p>
+<pre id="Reference_InText style="font-family:arial; font-size:60%">
+[1] Yi-Zhe Song; C.R. Bowen; A.H. Kim; A. Nassehi; J. Padget; N. Gathercole (2019), <i>Virtual visual sensors and their application in structural health monitoring</i>
+
+[2] Shen, Cunrui; Lu, Chihua (2024), <i>A Method to Obtain Frequency Response Functions of Operating Mechanical Systems Based on Experimental Modal Analysis and Operational Modal Analysis</i>
+
+[3] Lin Chen; Xue Jiang; Pei Xiao; Xingzhao Liu; Martin Haardt (2025), <i>Structured Tensor Decomposition for FDD Massive MIMO Downlink Channel Reconstruction</i>
+
+[4] Dionysius M. Siringoringo, Yozo Fujino (2006), <i>System identification of suspension bridge from ambient vibration response</i>
+
+</pre>
+</p>
+
+  
   
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
@@ -149,8 +200,10 @@ collapse—has become an essential design parameter for resilient, adaptive infr
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const AbstractCount = displayWordCount("Abstract_InText");
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const ReferenceCount = displayWordCount("Reference_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount;
+    const totalWordCount = AbstractCount + IntroductionCount + ReferenceCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
