@@ -62,7 +62,7 @@ li a:hover {
   <div style="background-color:#D5FFFF; width:100%; padding:20px 0;">
     <div style="max-width:1100px; margin:auto; padding:20px; box-sizing:border-box;">
       <h3 style="font-size:160%; font-family:courier;"><b>Abstract</b></h3>
-      <p id="Abstract_InText" style="font-size:110%;">
+      <p id="Abstract_InText" style="font-size:110%; font-family:arial">
         <img src="akachikaikyobridge.png" alt="Akashi Kaikyō Bridge" style="float:right; width:450px; height:320px; margin-left:20px;">
 <b>Resonance</b> plays a critical role in the performance, safety, and longevity of modern infrastructure. When a structure’s natural frequency aligns with external dynamic 
 forces (such as wind, seismic activity, or human motion), which the resulting amplification can lead to catastrophic failure or, when properly controlled, enhanced resilience. 
@@ -83,30 +83,35 @@ has become an essential design parameter for resilient, adaptive infrastructure 
 
 <!-- Introduction-->
   
-<div style="max-width:1100px; margin:auto; padding:20px; box-sizing:border-box;">
+<div id="Introduction_InText" style="max-width:1100px; margin:auto; padding:20px; box-sizing:border-box;">
     <h3 style="font-size:160%; font-family:courier;"><b>Introduction</b></h3>
-  <p>
-    <pre id="Introduction_InText" style="font-size:100%;">
+  <p style="font-family:arial; font-size:110%;">
 Resonance occurs when a structure is exposed to repeated vibrations at a frequency that matches its own <b>natural frequency</b> (the rate at which it naturally tends to move 
 back and forth). When this happens, even small vibrations can grow much stronger, leading to dangerous oscillations. Every structure has one or more natural frequencies 
 that depend on its shape, materials, and stiffness. For an example, a tall, flexible building will have a much lower natural frequency compared to a short, stiff structure. 
 If the external forces — such as wind gusts, earthquakes, or traffic — occur at or near these frequencies, resonance can amplify the motion, sometimes enough to cause 
 cracking, or even collapse.
+  </p>
 
+  <p style="font-family:arial; font-size:110%;">
 Because of this, engineers spend a great deal of time measuring and monitoring vibration behaviour during and after construction. The most common method is called <b>operational
 modal analysis (OMA)</b><sup>[1]</sup>, where sensors are placed on a bridge or building to record its motion under normal conditions such as traffic, wind, or minor tremors. 
 These recordings are then analysed to identify the structure’s natural frequencies, mode shapes (how it bends or twists), and damping ratios (how quickly the motion dies out). 
 Modern bridges often include permanent vibration sensors or accelerometers built into the structure, allowing engineers to monitor resonance in real time. This kind of system, 
 known as <b></b>structural health monitoring (SHM)</b><sup>[2]</sup>, helps detect changes over time; for instance, if a bridge becomes slightly weaker or its frequency shifts 
 due to damage or aging.
+</p>
 
+  <p style="font-family:arial; font-size:110%;">
 During construction, engineers also perform forced-vibration tests or ambient vibration tests to ensure that the measured natural frequencies match design predictions.
 International standards such as <b>ISO 4866</b><sup>[1]</sup> describe how to measure and interpret these vibrations safely. From further studies, a new method was
 introduced: the <b>frequency-domain decomposition (FDD)</b><sup>[3]</sup> method, which is widely used to extract modal data from field measurements. Research by <i>Fujino</i> and <i>Siringoringo</i> 
 (2013)<sup>[4]</sup> on bridge monitoring in Japan demonstrates how continuous vibration measurements can track changes in bridge stiffness and detect potential resonance problems before 
 they become dangerous. In practice, this means engineers can “tune” a structure during or after construction — for example, by adding dampers or adjusting stiffness — 
 to prevent resonance with expected environmental forces.
+  </p>
 
+  <p style="font-family:arial; font-size:110%;">
 In recent decades, many of the world’s most advanced structures have been designed with built-in systems to control resonance. Towering buildings such
 as the <i>Taipei 101 Tower</i> in Taiwan and the <i>Shanghai Tower</i> in China use <b>massive tuned mass dampers (TMDs)</b><sup>[5]</sup> weighing hundreds of tonnes to reduce swaying during typhoons and 
 earthquakes. These devices move out of phase with the building’s motion, absorbing energy and reducing acceleration. Japan had the most success in developing and applying the new 
@@ -115,33 +120,40 @@ core acts as a giant counter-mass, effectively functioning as an internal damper
 bridges such as the <i>Akashi Kaikyō Bridge</i> employ aerodynamic shaping and tuned damping devices within their towers and cables to control oscillations during strong winds or 
 earthquakes. These innovations illustrate how learning from the <i>Kobe Earthquake</i><sup>[6]</sup> have transformed resonance from an unprecedented destructive phenomenon into a more
 predictable and controlled design factor, significantly improving structural safety, durability, and public confidence.
-    </pre>
-</p>
+  </p>
   </div>
   
 <!--References-->
   
- <div style="max-width:1100px; margin:auto; padding:20px; box-sizing:border-box;">
+ <div id="Reference_InText" style="max-width:1100px; margin:auto; padding:20px; box-sizing:border-box;">
     <h3 style="font-size:150%; font-family:courier;"><i>References</i></h3>
-   <p>
-    <pre id="Reference_InText" style="font-size:95%;">
+    <p style="font-family:merriweather; font-size:95%;">
 [1] Yi-Zhe Song; C.R. Bowen; A.H. Kim; A. Nassehi; J. Padget; N. Gathercole (2019), <i>Virtual visual sensors and their application in structural health monitoring</i>
+    </p>
 
+   <p style="font-family:merriweather; font-size:95%;">
 [2] Shen, Cunrui; Lu, Chihua (2024), <i>A Method to Obtain Frequency Response Functions of Operating Mechanical Systems Based on Experimental Modal Analysis and Operational Modal Analysis</i>
+   </p>
 
+   <p style="font-family:merriweather; font-size:95%;">
 [3] Lin Chen; Xue Jiang; Pei Xiao; Xingzhao Liu; Martin Haardt (2025), <i>Structured Tensor Decomposition for FDD Massive MIMO Downlink Channel Reconstruction</i>
+   </p>
 
+   <p style="font-family:merriweather; font-size:95%;">
 [4] Dionysius M. Siringoringo; Yozo Fujino (2006), <i>System identification of suspension bridge from ambient vibration response</i>
+   </p>
 
+   <p style="font-family:merriweather; font-size:95%;">
 [5] Teplyshev, Vyacheslav; Mylnik, Alexey; Pushkareva, Maria; Agakhanov, Murad; Burova, Olga (2018), <i>Application of tuned mass dampers in high-rise construction</i>
+   </p>
 
+   <p style="font-family:merriweather; font-size:95%;">
 [6] Aldrich, Daniel P (2011), <i>The power of people: social capital’s role in recovery from the 1995 Kobe earthquake</i>
-    </pre>
- </p>
+   </p>
+  
   </div>
 
-  
-  
+
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
