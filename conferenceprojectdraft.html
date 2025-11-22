@@ -102,133 +102,143 @@ track changes in vibration. These technologies directly reflect lessons learned 
 
 <!--Kobe-->
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
-/* Reset */
+/* ------------------ RESET ------------------ */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Page width */
-.page-wrapper {
-    max-width: 1400px;
-    margin: 0 auto;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
 }
 
-/* -- Header -- */
-header, footer {
-    background-color: #002b80;   /* deep blue */
-    color: white;
-    padding: 25px;
-    border-bottom: 4px solid black;
+
+/* ------------------ HEADER ------------------ */
+
+header {
+    background: #0d1b4c;          /* deep navy blue */
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 4px solid #07112f;
     text-align: center;
 }
 
 header h1 {
-    font-family: courier, monospace;
-    font-size: 32px;
-    font-weight: bold;
+    font-family: courier, monospace; /* requested font */
+    font-size: 38px;
+    color: white;
 }
 
-/* -- Content -- */
-section {
+
+/* ------------------ LAYOUT WRAPPER ------------------ */
+
+.wrapper {
     display: flex;
-    min-height: 600px;
+    justify-content: center;
+    max-width: 1400px;      /* requested width */
+    margin: 0 auto;
+    padding-top: 0;
 }
 
-/* Left Column */
-.leftColumn {
-    width: 260px;          /* proportional for images */
-    min-height: 100vh;     /* full-height column */
-    background: #2f5bff;   /* brighter blue */
-    padding: 20px;
-    box-sizing: border-box;
+
+/* ------------------ SIDEBAR ------------------ */
+
+.leftcolumn {
+    width: 250px;
+    background: #356aff;        /* brighter blue */
+    padding: 25px;
+    min-height: 100vh;          /* full height column */
 }
 
-/* Images inside left column */
-.leftColumn img {
-    width: 100%;        /* scale to column width */
-    height: auto;       /* keep proportions */
-    margin-bottom: 25px;
+.leftcolumn img {
+    width: 100%;
+    margin-bottom: 20px;
     border-radius: 6px;
 }
 
-/* -- Main content -- */
-article {
+
+/* ------------------ MAIN CONTENT ------------------ */
+
+.mainContent {
     flex: 1;
-    padding: 40px;
-    background: #f4f4f4;
-    font-size: 18px;
+    background: white;
+    padding: 50px;
+}
+
+.mainContent h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.mainContent p {
+    font-size: 20px;
     line-height: 1.6;
 }
 
-article h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-}
 
-/* -- Footer -- */
+/* ------------------ FOOTER ------------------ */
+
 footer {
-    background: #555;
-    border-top: 3px solid #333;
-    height: 40px;            
+    background: #0d1b4c;          /* same deep navy blue */
+    width: 100%;
+    height: 50px;
+    border-top: 4px solid #07112f;
 }
 
 </style>
 </head>
 
+
+
 <body>
 
-<div class="pageWrapper">
-
-    <!-- HEADER -->
-    <header>
-        <h1 style="font-family:courier;">Revival from the Great Hanshin Earthquake</h1>
-    </header>
-
-    <!-- TWO COLUMN LAYOUT -->
-    <section>
-
-        <!-- Left sidebar -->
-        <div class="leftColumn">
-
-            <!-- Images -->
-            <img src="london.png" alt="London">
+<!-- HEADER -->
+<header>
+    <h1>Revival from the Great Hanshin Earthquake</h1>
+</header>
 
 
-        </div>
+<!-- WRAPPER (SIDEBAR + CONTENT SIDE-BY-SIDE) -->
+<div class="wrapper">
 
-        <!-- MAIN CONTENT -->
-        <article>
-            <h1>Kobe 1995</h1>
-            
-            <p>
-                The Great Hanshin Earthquake struck Kobe on 17 January 1995
-                with a magnitude of 6.9, causing over 6,400 deaths and massive 
-                destruction to buildings, highways, and rail systems.
-            </p>
+    <!-- SIDEBAR -->
+    <div class="leftcolumn">
 
-            <p>
-                Severe ground shaking and soil failure led to collapsed
-                expressways and widespread infrastructure damage.
-                The disaster prompted major reforms in Japan’s seismic design,
-                including improved damping, base isolation, and structural
-                monitoring technologies.
-            </p>
-        </article>
+        <!-- Replace these with any images you want -->
+        <img src="london.jpg" alt="London">
+        <img src="paris.jpg" alt="Paris">
+        <img src="tokyo.jpg" alt="Tokyo">
 
-    </section>
+    </div>
 
-    <!-- FOOTER -->
-    <footer>
-    </footer>
+
+    <!-- MAIN CONTENT -->
+    <div class="mainContent">
+
+        <h2>Kobe 1995</h2>
+
+        <p>
+            The Great Hanshin Earthquake struck Kobe on 17 January 1995 with a magnitude of 6.9, 
+            causing over 6,400 deaths and massive destruction to buildings, highways, and rail systems. 
+            Severe ground shaking and soil failure led to collapsed expressways and widespread 
+            infrastructure damage. The disaster prompted major reforms in Japan’s seismic design, 
+            including improved damping, base isolation, and structural monitoring technologies.
+        </p>
+
+    </div>
 
 </div>
+
+
+<!-- FOOTER -->
+<footer></footer>
 
 </body>
 
