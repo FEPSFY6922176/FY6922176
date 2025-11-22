@@ -130,41 +130,43 @@ section {
   display: flex;
 }
 
-/* Left column*/
+/* Left column container */
 .leftColumn {
-  flex: 1;
-  background: #ccc;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Style the list */
-.leftColumn ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.leftcolumn {
-    width: 200px;           /* column width */
-    background: #ddd;       /* light grey */
+    width: 200px;             /* Sidebar width */
+    background: #3d6fe0;      /* Blue background */
     padding: 20px;
-    float: left;            /* makes it a left sidebar */
+    float: left;              /* Makes it stay on the left */
+    min-height: 100%;         /* Stretches downward */
 }
 
-.leftcolumn ul {
+/* Remove bullets */
+.leftColumn ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.leftcolumn li {
-    margin: 15px 0;
+/* Space between items */
+.leftColumn li {
+    margin: 20px 0;
 }
 
-.leftcolumn a {
+/* Links / images inside column */
+.leftColumn a {
     text-decoration: none;
+    color: white;
     font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
 }
+
+/* Content area to the right */
+article {
+    margin-left: 240px;     /* Leaves space for sidebar */
+    padding: 20px;
+}
+
 
 /* Style the content */
 article {
@@ -222,7 +224,6 @@ footer {
 </footer>
 
 </body>
-</html>
 
 <!--References-->
   <div id="Reference_InText" style="width:100%; margin:0; padding:30px; box-sizing:border-box; background-color:#fff9c4; border-radius:0;">
