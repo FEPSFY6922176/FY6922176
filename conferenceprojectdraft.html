@@ -86,41 +86,16 @@ has become an essential design parameter for resilient, adaptive infrastructure 
 <div id="Introduction_InText" style="max-width:1100px; margin:auto; padding:20px; box-sizing:border-box;">
     <h3 id="Introduction" style="font-size:160%; font-family:courier;"><b>Introduction</b></h3>
   <p style="font-family:arial; font-size:110%;">
-Resonance occurs when a structure is exposed to repeated vibrations at a frequency that matches its own <b>natural frequency</b> (the rate at which it naturally tends to move 
-back and forth). When this happens, even small vibrations can grow much stronger, leading to dangerous oscillations. Every structure has one or more natural frequencies 
-that depend on its shape, materials, and stiffness. For an example, a tall, flexible building will have a much lower natural frequency compared to a short, stiff structure. 
-If the external forces — such as wind gusts, earthquakes, or traffic — occur at or near these frequencies, resonance can amplify the motion, sometimes enough to cause 
-cracking, or even collapse.
+Modern resonance-control techniques in infrastructure have largely developed in response to past structural failures. Early disasters such as the 1940 Tacoma Narrows Bridge collapse revealed how wind-induced resonance and aeroelastic 
+flutter could cause catastrophic oscillations, leading engineers to introduce aerodynamic deck shaping and the first forms of damping devices. Later, the 1995 Kobe Earthquake demonstrated how buildings and 
+bridges could suffer severe damage when their natural frequencies aligned with near-fault ground motions. This event accelerated the adoption of base isolation, energy-dissipating devices, and advanced tuned mass damping in Japan and 
+worldwide (Fujino and Siringoringo 2013).
   </p>
 
   <p style="font-family:arial; font-size:110%;">
-Because of this, engineers spend a great deal of time measuring and monitoring vibration behaviour during and after construction. The most common method is called <b>operational
-modal analysis (OMA)</b><sup>[1]</sup>, where sensors are placed on a bridge or building to record its motion under normal conditions such as traffic, wind, or minor tremors. 
-These recordings are then analysed to identify the structure’s natural frequencies, mode shapes (how it bends or twists), and damping ratios (how quickly the motion dies out). 
-Modern bridges often include permanent vibration sensors or accelerometers built into the structure, allowing engineers to monitor resonance in real time. This kind of system, 
-known as <b></b>structural health monitoring (SHM)</b><sup>[2]</sup>, helps detect changes over time; for instance, if a bridge becomes slightly weaker or its frequency shifts 
-due to damage or aging.
+As a result, many modern structures—including Taipei 101, the Tokyo Skytree, and the Akashi Kaikyō Bridge—are equipped with large-scale TMDs, seismic isolators, and real-time structural health monitoring (SHM) systems that continually 
+track changes in vibration. These technologies directly reflect lessons learned from past failures, marking a shift from passive resistance to actively controlling resonance to ensure greater safety and resilience.
 </p>
-
-  <p style="font-family:arial; font-size:110%;">
-During construction, engineers also perform forced-vibration tests or ambient vibration tests to ensure that the measured natural frequencies match design predictions.
-International standards such as <b>ISO 4866</b><sup>[1]</sup> describe how to measure and interpret these vibrations safely. From further studies, a new method was
-introduced: the <b>frequency-domain decomposition (FDD)</b><sup>[3]</sup> method, which is widely used to extract modal data from field measurements. Research by <i>Fujino</i> and <i>Siringoringo</i> 
-(2013)<sup>[4]</sup> on bridge monitoring in Japan demonstrates how continuous vibration measurements can track changes in bridge stiffness and detect potential resonance problems before 
-they become dangerous. In practice, this means engineers can “tune” a structure during or after construction — for example, by adding dampers or adjusting stiffness — 
-to prevent resonance with expected environmental forces.
-  </p>
-
-  <p style="font-family:arial; font-size:110%;">
-In recent decades, many of the world’s most advanced structures have been designed with built-in systems to control resonance. Towering buildings such
-as the <i>Taipei 101 Tower</i> in Taiwan and the <i>Shanghai Tower</i> in China use <b>massive tuned mass dampers (TMDs)</b><sup>[5]</sup> weighing hundreds of tonnes to reduce swaying during typhoons and 
-earthquakes. These devices move out of phase with the building’s motion, absorbing energy and reducing acceleration. Japan had the most success in developing and applying the new 
-technology, incorporating both active and passive damping systems in skyscrapers like the <i>Yokohama Landmark Tower</i> and <i>Tokyo Skytree</i>. The Skytree’s central reinforced-concrete 
-core acts as a giant counter-mass, effectively functioning as an internal damper that improves seismic and wind performance<sup>[4]</sup>. Similarly, modern 
-bridges such as the <i>Akashi Kaikyō Bridge</i> employ aerodynamic shaping and tuned damping devices within their towers and cables to control oscillations during strong winds or 
-earthquakes. These innovations illustrate how learning from the <i>Kobe Earthquake</i><sup>[6]</sup> have transformed resonance from an unprecedented destructive phenomenon into a more
-predictable and controlled design factor, significantly improving structural safety, durability, and public confidence.
-  </p>
   </div>
 
   <hr>
@@ -155,20 +130,28 @@ section {
   display: flex;
 }
 
-/* Style the navigation menu */
-nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+/* Left column*/
+.leftColumn {
   flex: 1;
   background: #ccc;
   padding: 20px;
+  box-sizing: border-box;
 }
 
-/* Style the list inside the menu */
-nav ul {
+/* Style the list */
+.leftColumn ul {
   list-style-type: none;
   padding: 0;
 }
+
+/* Links inside the left column */
+.leftColumn a {
+  text-decoration: none;
+  color: blue;
+  display: block;
+  margin-bottom: 10px;
+}
+
 
 /* Style the content */
 article {
@@ -199,15 +182,25 @@ footer {
 <body>
 
 <header>
-  <h2>Cities</h2>
+  <h2>Revival from the Great Hanshin Earthquake</h2>
 </header>
 
 <section>
-  
+    <div class="leftcolumn">
+        <ul>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">Tokyo</a></li>
+        </ul>
+    </div>
+</section>
+
   <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <h1>Kobe</h1>
+     <p style="font-family:arial; font-size:110%;">
+      The Great Hanshin Earthquake struck Kobe on 17 January 1995 with a magnitude of 6.9, causing over 6,400 deaths and massive destruction to buildings, highways, and rail systems. Severe ground shaking and soil failure led to 
+      collapsed expressways and widespread infrastructure damage. The disaster prompted major reforms in Japan’s seismic design, including improved damping, base isolation, and structural monitoring technologies.
+    </p>
   </article>
 </section>
 
