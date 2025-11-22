@@ -102,128 +102,140 @@ track changes in vibration. These technologies directly reflect lessons learned 
 
 
 <!--Kobe-->
-  <head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities Template</title>
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+    <style>
 
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;
-  display: flex;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+        }
 
-/* Left column container */
-.leftColumn {
-    width: 200px;             /* Sidebar width */
-    background: #3d6fe0;      /* Blue background */
-    padding: 20px;
-    float: left;              /* Makes it stay on the left */
-    min-height: 100%;         /* Stretches downward */
-}
+        /* ---------------- HEADER ---------------- */
+        header {
+            background-color: #666;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            font-size: 45px;
+            font-weight: bold;
+        }
 
-/* Remove bullets */
-.leftColumn ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
+        /* -------------- TWO COLUMN LAYOUT ----------- */
+        .columns {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 500px;
+        }
 
-/* Space between items */
-.leftColumn li {
-    margin: 20px 0;
-}
+        /* LEFT COLUMN */
+        .leftColumn {
+            width: 230px;
+            background-color: #dadada;
+            padding: 25px;
+        }
 
-/* Links / images inside column */
-.leftColumn a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-}
+        .leftColumn ul {
+            list-style-type: none;
+        }
 
-/* Content area to the right */
-article {
-    margin-left: 240px;     /* Leaves space for sidebar */
-    padding: 20px;
-}
+        .leftColumn li {
+            margin-bottom: 25px;
+        }
 
+        .leftColumn a {
+            font-size: 22px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
 
-/* Style the content */
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
-}
+        .leftColumn a:hover {
+            text-decoration: underline;
+        }
 
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
+        /* RIGHT COLUMN */
+        .rightColumn {
+            flex: 1;
+            padding: 40px;
+            background-color: #ffffff;
+        }
 
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-</style>
+        .rightColumn h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .rightColumn p {
+            font-size: 22px;
+            line-height: 1.6;
+        }
+
+        /* ---------------- FOOTER ---------------- */
+        footer {
+            background-color: #666;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            margin-top: 40px;
+        }
+
+    </style>
 </head>
+
 <body>
 
-<header id="Japan">
-  <h2>Revival from the Great Hanshin Earthquake</h2>
-</header>
+    <!-- HEADER -->
+    <header>
+        Revival from the Great Hanshin Earthquake
+    </header>
 
-<section>
-    <div class="leftcolumn">
-        <ul>
-            <li><a href="#">London</a></li>
-            <li><a href="#">Paris</a></li>
-            <li><a href="#">Tokyo</a></li>
-        </ul>
-    </div>
-</section>
+    <!-- TWO COLUMNS -->
+    <section class="columns">
 
-  <article>
-    <h1>Kobe</h1>
-     <p style="font-family:arial; font-size:110%;">
-      The Great Hanshin Earthquake struck Kobe on 17 January 1995 with a magnitude of 6.9, causing over 6,400 deaths and massive destruction to buildings, highways, and rail systems. Severe ground shaking and soil failure led to 
-      collapsed expressways and widespread infrastructure damage. The disaster prompted major reforms in Japan’s seismic design, including improved damping, base isolation, and structural monitoring technologies.
-    </p>
-  </article>
-</section>
+        <!-- LEFT COLUMN -->
+        <div class="leftColumn">
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </div>
 
-<footer>
-  <p>Footer</p>
-</footer>
+        <!-- RIGHT COLUMN -->
+        <div class="rightColumn">
+
+            <h1>Kobe</h1>
+
+            <p>
+                The Great Hanshin Earthquake struck Kobe on 17 January 1995 with a magnitude of 6.9, causing over 6,400 deaths and massive destruction to buildings, highways, and rail systems. Severe ground shaking and soil failure led to collapsed expressways
+                and widespread infrastructure damage. The disaster prompted major reforms in Japan’s seismic design, including improved damping, base isolation, and structural monitoring technologies.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        Footer
+    </footer>
 
 </body>
+</html>
 
 <!--References-->
   <div id="Reference_InText" style="width:100%; margin:0; padding:30px; box-sizing:border-box; background-color:#fff9c4; border-radius:0;">
