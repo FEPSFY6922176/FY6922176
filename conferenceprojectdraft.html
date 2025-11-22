@@ -102,8 +102,6 @@ track changes in vibration. These technologies directly reflect lessons learned 
 
 
 <!--Kobe-->
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -122,7 +120,7 @@ track changes in vibration. These technologies directly reflect lessons learned 
             background: #f4f4f4;
         }
 
-        /* ---------------- HEADER ---------------- */
+        /* Header */
         header {
             background-color: #666;
             color: white;
@@ -132,7 +130,7 @@ track changes in vibration. These technologies directly reflect lessons learned 
             font-weight: bold;
         }
 
-        /* -------------- TWO COLUMN LAYOUT ----------- */
+        /* Columns */
         .columns {
             display: flex;
             flex-direction: row;
@@ -140,7 +138,7 @@ track changes in vibration. These technologies directly reflect lessons learned 
             min-height: 500px;
         }
 
-        /* LEFT COLUMN */
+        /* Right Column */
         .leftColumn {
             width: 230px;
             background-color: #dadada;
@@ -166,7 +164,7 @@ track changes in vibration. These technologies directly reflect lessons learned 
             text-decoration: underline;
         }
 
-        /* RIGHT COLUMN */
+        /* Right Column */
         .rightColumn {
             flex: 1;
             padding: 40px;
@@ -183,7 +181,7 @@ track changes in vibration. These technologies directly reflect lessons learned 
             line-height: 1.6;
         }
 
-        /* ---------------- FOOTER ---------------- */
+        //
         footer {
             background-color: #666;
             color: white;
@@ -196,17 +194,17 @@ track changes in vibration. These technologies directly reflect lessons learned 
     </style>
 </head>
 
-<body>
+<body id=""Japan_InText"">
 
-    <!-- HEADER -->
-    <header>
+    <!-- Header -->
+    <h id="Japan">
         Revival from the Great Hanshin Earthquake
-    </header>
+    </h>
 
-    <!-- TWO COLUMNS -->
+    <!-- Columns -->
     <section class="columns">
 
-        <!-- LEFT COLUMN -->
+        <!-- left Column -->
         <div class="leftColumn">
             <ul>
                 <li><a href="#">London</a></li>
@@ -215,7 +213,7 @@ track changes in vibration. These technologies directly reflect lessons learned 
             </ul>
         </div>
 
-        <!-- RIGHT COLUMN -->
+        <!-- Right Column -->
         <div class="rightColumn">
 
             <h1>Kobe</h1>
@@ -229,15 +227,14 @@ track changes in vibration. These technologies directly reflect lessons learned 
 
     </section>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
         Footer
     </footer>
 
 </body>
-</html>
 
-<!--References-->
+<!-- References -->
   <div id="Reference_InText" style="width:100%; margin:0; padding:30px; box-sizing:border-box; background-color:#fff9c4; border-radius:0;">
     <h3 id="References" style="font-size:150%; font-family:courier;"><i>References</i></h3>
     <p style="font-family:merriweather; font-size:95%;">
@@ -343,8 +340,9 @@ track changes in vibration. These technologies directly reflect lessons learned 
     const AbstractCount = displayWordCount("Abstract_InText");
     const IntroductionCount = displayWordCount("Introduction_InText");
     const ReferenceCount = displayWordCount("Reference_InText");
+    const JapanCount = displayWordCount("Japan_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + IntroductionCount + ReferenceCount;
+    const totalWordCount = AbstractCount + IntroductionCount + ReferenceCount + JapanCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
