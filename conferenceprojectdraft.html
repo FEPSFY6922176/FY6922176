@@ -103,134 +103,132 @@ track changes in vibration. These technologies directly reflect lessons learned 
 
 <!--Kobe-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cities Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
+<style>
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+/* Reset */
+* {
+  box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f4f4;
-        }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-        /* Header */
-        header {
-            background-color: #666;
-            color: white;
-            text-align: center;
-            padding: 40px;
-            font-size: 45px;
-            font-weight: bold;
-        }
+/* Header */
+header {
+  width: 100%;
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
 
-        /* Columns */
-        .columns {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            min-height: 500px;
-        }
+  border-bottom: 4px solid black; 
+}
 
-        /* Right Column */
-        .leftColumn {
-            width: 230px;
-            background-color: #dadada;
-            padding: 25px;
-        }
+/* Columns */
 
-        .leftColumn ul {
-            list-style-type: none;
-        }
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 
-        .leftColumn li {
-            margin-bottom: 25px;
-        }
+/* Left column */
+.leftColumn {
+  width: 250px;
+  background-color: #4572e8;
+  padding: 20px;
+  min-height: 100vh; 
+}
 
-        .leftColumn a {
-            font-size: 22px;
-            font-weight: bold;
-            color: black;
-            text-decoration: none;
-        }
+.leftColumn ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-        .leftColumn a:hover {
-            text-decoration: underline;
-        }
+.leftColumn li {
+  margin: 40px 0;
+}
 
-        /* Right Column */
-        .rightColumn {
-            flex: 1;
-            padding: 40px;
-            background-color: #ffffff;
-        }
+.leftColumn a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
 
-        .rightColumn h1 {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
+/* Content */
 
-        .rightColumn p {
-            font-size: 22px;
-            line-height: 1.6;
-        }
+article {
+  flex: 1;
+  padding: 40px;
+  background-color: #f2f2f2;
+}
 
-        //
-        footer {
-            background-color: #666;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 20px;
-            margin-top: 40px;
-        }
+article h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
 
-    </style>
+article p {
+  font-size: 26px;
+  line-height: 1.5;
+  max-width: 1200px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #777;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+
+  border-top: 4px solid black;
+}
+
+</style>
 </head>
 
-<body id=""Japan_InText"">
+<body id="Japan_InText">
 
-    <!-- Header -->
-    <h id="Japan">
-        Revival from the Great Hanshin Earthquake
-    </h>
+<header id="Japan">
+  Revival from the Great Hanshin Earthquake
+</header>
 
-    <!-- Columns -->
-    <section class="columns">
+<section class="container">
 
-        <!-- left Column -->
-        <div class="leftColumn">
-            <ul>
-                <li><a href="#">London</a></li>
-                <li><a href="#">Paris</a></li>
-                <li><a href="#">Tokyo</a></li>
-            </ul>
-        </div>
+  <div class="leftColumn">
+      <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+      </ul>
+  </div>
 
-        <!-- Right Column -->
-        <div class="rightColumn">
+  <article>
+      <h1>Kobe 1995</h1>
+      <p>
+      The Great Hanshin Earthquake struck Kobe on 17 January 1995 with a magnitude of 6.9,c ausing over 6,400 deaths and massive destruction to buildings, highways, and rail systems. Severe ground shaking and soil failure led to collapsed expressways and 
+      widespread infrastructure damage. The disaster prompted major reforms in Japan’s seismic design, including improved damping, base isolation, and structural monitoring technologies.
+      </p>
+  </article>
 
-            <h1>Kobe</h1>
+</section>
 
-            <p>
-                The Great Hanshin Earthquake struck Kobe on 17 January 1995 with a magnitude of 6.9, causing over 6,400 deaths and massive destruction to buildings, highways, and rail systems. Severe ground shaking and soil failure led to collapsed expressways
-                and widespread infrastructure damage. The disaster prompted major reforms in Japan’s seismic design, including improved damping, base isolation, and structural monitoring technologies.
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        Footer
-    </footer>
+<footer>
+  Footer
+</footer>
 
 </body>
 
