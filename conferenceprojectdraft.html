@@ -61,7 +61,7 @@ li a:hover {
 
   <div style="background-color:#d4e2eb; width:100%; padding:20px 0;">
     <div style="max-width:1100px; margin:auto; padding:20px; box-sizing:border-box;">
-      <h3 id="Abstract" style="font-size:160%; font-family:courier; margin-bottom:20px;"><b>Abstract</b></h3>h3>
+      <h3 id="Abstract" style="font-size:160%; font-family:courier; margin-bottom:20px;"><b>Abstract</b></h3>
       <p id="Abstract_InText" style="font-size:110%; font-family:arial">
         <img src="akachikaikyobridge.png" alt="Akashi Kaikyō Bridge" style="float:right; width:560px; height:480px; margin-left:20px;">
 <b>Resonance</b> plays a critical role in the performance, safety, and longevity of modern infrastructure. When a structure’s natural frequency aligns with external 
@@ -102,140 +102,149 @@ track changes in vibration. These technologies directly reflect lessons learned 
 
 <!--Kobe-->
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
-/* ------------------ RESET ------------------ */
+/* -------------------- GLOBAL RESET -------------------- */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     background: #f5f5f5;
 }
 
-
-/* ------------------ HEADER ------------------ */
-
+/* -------------------- HEADER -------------------- */
 header {
-    background: #0d1b4c;          /* deep navy blue */
-    width: 100%;
-    padding: 30px 0;
-    border-bottom: 4px solid #07112f;
-    text-align: center;
-}
-
-header h1 {
-    font-family: courier, monospace; /* requested font */
-    font-size: 38px;
+    background: #071a52; /* deep navy-blue */
     color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-family: courier, monospace;
+    font-size: 36px;
+    border-bottom: 4px solid #000;
 }
 
-
-/* ------------------ LAYOUT WRAPPER ------------------ */
-
+/* -------------------- WRAPPER -------------------- */
 .wrapper {
+    max-width: 1400px;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    max-width: 1400px;      /* requested width */
-    margin: 0 auto;
-    padding-top: 0;
+    padding-top: 20px;
 }
 
-
-/* ------------------ SIDEBAR ------------------ */
-
+/* -------------------- LEFT SIDEBAR -------------------- */
 .leftcolumn {
-    width: 250px;
-    background: #356aff;        /* brighter blue */
-    padding: 25px;
-    min-height: 100vh;          /* full height column */
+    width: 330px;                /* sidebar width */
+    background: #3f6ff2;         /* bright-but-deep blue */
+    padding: 20px;
+    min-height: 900px;
+    color: white;
+    font-size: 90%;
 }
 
 .leftcolumn img {
     width: 100%;
-    margin-bottom: 20px;
     border-radius: 6px;
+    margin-bottom: 20px;
 }
 
+/* Kobe title inside sidebar */
+.leftcolumn h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, sans-serif;
+}
 
-/* ------------------ MAIN CONTENT ------------------ */
-
+/* -------------------- MAIN CONTENT -------------------- */
 .mainContent {
     flex: 1;
     background: white;
-    padding: 50px;
-}
-
-.mainContent h2 {
-    font-size: 40px;
-    margin-bottom: 25px;
-}
-
-.mainContent p {
+    padding: 40px;
     font-size: 20px;
     line-height: 1.6;
 }
 
+.mainContent p {
+    margin-bottom: 22px;
+}
 
-/* ------------------ FOOTER ------------------ */
-
+/* -------------------- FOOTER -------------------- */
 footer {
-    background: #0d1b4c;          /* same deep navy blue */
-    width: 100%;
-    height: 50px;
-    border-top: 4px solid #07112f;
+    background: #071a52;
+    height: 40px;
+    border-top: 4px solid #000;
+    margin-top: 40px;
 }
 
 </style>
 </head>
 
-
-
 <body>
 
-<!-- HEADER -->
 <header>
-    <h1>Revival from the Great Hanshin Earthquake</h1>
+    Revival from the Great Hanshin Earthquake
 </header>
 
-
-<!-- WRAPPER (SIDEBAR + CONTENT SIDE-BY-SIDE) -->
+<!-- WRAPPER -->
 <div class="wrapper">
 
-    <!-- SIDEBAR -->
+    <!-- LEFT SIDEBAR -->
     <div class="leftcolumn">
 
-        <!-- Replace these with any images you want -->
-        <img src="kobeearthquake.png" alt="Kobe Earthquake">
-        
-    </div>
-
-
-    <!-- MAIN CONTENT -->
-    <div class="mainContent">
+        <!-- Replace with your preferred image -->
+        <img src="kobearthquake.png" alt="Kobe Earthquake">
 
         <h2>Kobe 1995</h2>
 
         <p>
-            The Great Hanshin Earthquake struck Kobe on 17 January 1995 with a magnitude of 6.9, 
-            causing over 6,400 deaths and massive destruction to buildings, highways, and rail systems. 
-            Severe ground shaking and soil failure led to collapsed expressways and widespread 
-            infrastructure damage. The disaster prompted major reforms in Japan’s seismic design, 
-            including improved damping, base isolation, and structural monitoring technologies.
+            The Great Hanshin Earthquake struck Kobe on 17 January 1995
+            with a magnitude of 6.9, causing widespread destruction.
+        </p>
+
+        <p>
+            Over 6,400 deaths occurred, and severe ground shaking caused
+            soil failures and collapsed expressways.
+        </p>
+
+        <p>
+            The disaster prompted major reforms in Japan’s seismic design,
+            including improved damping, base isolation, and monitoring technologies.
+        </p>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="mainContent">
+
+        <p style="margin-bottom:15px;">
+           Tuned Mass Dampers (TMDs) are devices used in buildings and bridges to control excessive vibrations by counteracting motion at specific frequencies. 
+           A TMD typically consists of a large mass attached to the structure through springs and dampers. It is “tuned” to match the natural frequency of the structure’s dominant vibration mode.
+           When the structure begins to sway due to wind, earthquakes, or traffic, the TMD moves out of phase with that motion.
+           This opposite movement absorbs and dissipates energy, reducing the overall amplitude of vibration and improving comfort and safety.
+        </p>
+
+        <p >
+            The underlying principle is simple but powerful: every structure has a natural frequency, and when external forces match this frequency, the structure can resonate and vibrate excessively.
+            A TMD works by adding a secondary mass connected through springs and dampers, tuned so that its natural frequency matches the structure’s dominant vibration mode.
+            When the structure begins to move, the TMD oscillates out of phase, meaning its movement lags just enough to produce an equal and opposite force.
+            This counter-motion draws vibrational energy away from the structure and dissipates it as heat through the damper. TMDs became widely adopted during the late 20th century as buildings 
+            grew taller and more flexible, and as long-span bridges became more sensitive to wind and seismic excitation. Their effectiveness relies on precise tuning, since even small frequency mismatches 
+            can reduce performance. Modern TMDs can be passive, semi-active, or active, and are often combined with digital monitoring systems to maintain tuning accuracy as structural properties change over 
+            time.
         </p>
 
     </div>
 
 </div>
 
-
-<!-- FOOTER -->
 <footer></footer>
 
 </body>
