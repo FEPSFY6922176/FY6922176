@@ -64,13 +64,12 @@ li a:hover {
       <h3 id="Abstract" style="font-size:160%; font-family:courier;"><b>Abstract</b></h3>
       <p id="Abstract_InText" style="font-size:110%; font-family:arial">
         <img src="akachikaikyobridge.png" alt="Akashi Kaikyō Bridge" style="float:right; width:560px; height:480px; margin-left:20px;">
-<b>Resonance</b> plays a critical role in the performance, safety, and longevity of modern infrastructure. When a structure’s natural frequency aligns with external dynamic 
-forces (such as wind, seismic activity, or human motion), which the resulting amplification can lead to catastrophic failure or, when properly controlled, enhanced resilience. 
-This article examines the evolution of resonance awareness and mitigation strategies in civil engineering through notable historical and contemporary examples. 
-Early disasters, including the <i>1995 Kobe Earthquake</i><sup>[6]</sup> in Japan, which had forsakened Japan in devastation, ultimately lead to the adoption of aerodynamic 
-deck designs, tuned mass dampers, and seismic isolation systems; Japan’s post-Kobe reconstruction ushered in a global shift toward performance-based design, where resonance 
-is analyzed and controlled. This includes successes such as the Akashi Kaikyō Bridge, Tokyo Skytree, and Taipei 101, demonstrating how tuned and base-isolated systems 
-now safeguard against wind and seismic excitation. Through comparative analysis of failed and successful designs, this study highlights how monitoring resonance 
+<b>Resonance</b> plays a critical role in the performance, safety, and longevity of modern infrastructure. When a structure’s natural frequency aligns with external 
+forces (such as wind, seismic activity, or human motion), the resulting adjustment could result in catastrophic consequences, which can be prevented through new 
+precautionary measures made before construction. This article examines the evolution of resonance awareness and mitigation strategies in civil engineering through notable historical examples. 
+Early disasters, including the calamitous <i>1995 Kobe Earthquake</i><sup>[6]</sup> in Japan, ultimately lead to the adoption of aerodynamic deck designs, tuned mass dampers, and seismic isolation systems; 
+Japan’s post-Kobe reconstruction ushered in a global shift toward performance-based design, where resonance is analyzed and controlled. This includes successes such as the Akashi Kaikyō Bridge, Tokyo Skytree, 
+and Taipei 101, demonstrating how the adoption of new the protective measures have ensured our security. Through comparative analysis of failed and successful designs, this study highlights how monitoring resonance 
 has become an essential design parameter for resilient, adaptive infrastructure in earthquake and wind-prone regions worldwide.
  </p>
     </div>
@@ -104,131 +103,135 @@ track changes in vibration. These technologies directly reflect lessons learned 
 <!--Kobe-->
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
 /* Reset */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+/* Page width */
+.pageWrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
 }
 
-/* Header */
+/* -- Header -- */
 header {
-  width: 100%;
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-
-  border-bottom: 4px solid black; 
+    background: #555;
+    color: white;
+    padding: 35px 0;
+    border-bottom: 3px solid #333;
+    text-align: center;
 }
 
-/* Columns */
-
-.container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+header h1 {
+    font-family: courier, monospace;
+    font-size: 32px;
+    font-weight: bold;
 }
 
-/* Left column */
+/* -- Content -- */
+section {
+    display: flex;
+    min-height: 600px;
+}
+
+/* Left Column */
 .leftColumn {
-  width: 250px;
-  background-color: #4572e8;
-  padding: 20px;
-  min-height: 100vh; 
+    flex: 0 0 25%;         /* 25% width (proportional) */
+    background: #3d66f0;   /* blue */
+    padding: 20px;
+    color: white;
 }
 
-.leftColumn ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/* Images inside left column */
+.leftColumn img {
+    width: 100%;        /* scale to column width */
+    height: auto;       /* keep proportions */
+    margin-bottom: 25px;
+    border-radius: 6px;
 }
 
-.leftColumn li {
-  margin: 40px 0;
-}
-
-.leftColumn a {
-  text-decoration: none;
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-  display: block;
-  text-align: center;
-}
-
-/* Content */
-
+/* -- Main content -- */
 article {
-  flex: 1;
-  padding: 40px;
-  background-color: #f2f2f2;
+    flex: 1;
+    padding: 40px;
+    background: #f4f4f4;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 article h1 {
-  font-size: 50px;
-  margin-top: 0;
+    font-size: 42px;
+    margin-bottom: 20px;
 }
 
-article p {
-  font-size: 26px;
-  line-height: 1.5;
-  max-width: 1200px;
-}
-
-/* Footer */
+/* -- Footer -- */
 footer {
-  width: 100%;
-  background-color: #777;
-  padding: 20px;
-  text-align: center;
-  color: white;
-  font-size: 22px;
-
-  border-top: 4px solid black;
+    background: #555;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid #333;
+    margin-top: 20px;
 }
 
 </style>
 </head>
 
-<body id="Japan_InText">
+<body>
 
-<header id="Japan">
-  Revival from the Great Hanshin Earthquake
-</header>
+<div class="pageWrapper">
 
-<section class="container">
+    <!-- HEADER -->
+    <header>
+        <h1>Revival from the Great Hanshin Earthquake</h1>
+    </header>
 
-  <div class="leftColumn">
-      <ul>
-          <li><a href="#">London</a></li>
-          <li><a href="#">Paris</a></li>
-          <li><a href="#">Tokyo</a></li>
-      </ul>
-  </div>
+    <!-- TWO COLUMN LAYOUT -->
+    <section>
 
-  <article>
-      <h1>Kobe 1995</h1>
-      <p>
-      The Great Hanshin Earthquake struck Kobe on 17 January 1995 with a magnitude of 6.9,c ausing over 6,400 deaths and massive destruction to buildings, highways, and rail systems. Severe ground shaking and soil failure led to collapsed expressways and 
-      widespread infrastructure damage. The disaster prompted major reforms in Japan’s seismic design, including improved damping, base isolation, and structural monitoring technologies.
-      </p>
-  </article>
+        <!-- Left sidebar -->
+        <div class="leftColumn">
 
-</section>
+            <!-- Images -->
+            <img src="london.png" alt="London">
 
-<footer>
-  Footer
-</footer>
+
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <article>
+            <h1>Kobe 1995</h1>
+            
+            <p>
+                The Great Hanshin Earthquake struck Kobe on 17 January 1995
+                with a magnitude of 6.9, causing over 6,400 deaths and massive 
+                destruction to buildings, highways, and rail systems.
+            </p>
+
+            <p>
+                Severe ground shaking and soil failure led to collapsed
+                expressways and widespread infrastructure damage.
+                The disaster prompted major reforms in Japan’s seismic design,
+                including improved damping, base isolation, and structural
+                monitoring technologies.
+            </p>
+        </article>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+    </footer>
+
+</div>
 
 </body>
 
