@@ -128,110 +128,107 @@ track changes in vibration. These technologies directly reflect lessons learned 
 
   <hr>
 
-
+<!-- Kobe --> 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reborn from the Great Hanshin Earthquake</title>
 
 <style>
-/* RESET */
+/* --- RESET --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* PAGE WIDTH */
-.wrapper {
-    max-width: 1400px;
-    margin: auto;
-    display: flex;
-    min-height: calc(100vh - 160px);
-}
-
-/* HEADER */
+/* --- HEADER --- */
 header {
     background: #0a1a45;
-    text-align: center;
     padding: 25px 0;
+    text-align: center;
     border-bottom: 4px solid #061230;
 }
 header h1 {
     font-family: "Times New Roman", serif;
+    font-size: 260%;
     color: white;
-    font-size: 230%;
     letter-spacing: 2px;
 }
 
-/* FOOTER */
-footer {
-    height: 40px;
-    background: #0a1a45;
-    border-top: 4px solid #061230;
+/* --- PAGE LAYOUT --- */
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    min-height: calc(100vh - 120px);
 }
 
-/* LEFT COLUMN */
+/* --- LEFT COLUMN --- */
 .leftcolumn {
     width: 330px;
-    background: #3c6df0;
+    background: #36cdf0;
     padding: 20px;
     color: white;
 }
 
-/* IMAGE BOXES */
-.leftcolumn .imgBox {
-    margin-bottom: 30px;
-}
-
+/* Image styling */
 .leftcolumn img {
     width: 100%;
     border-radius: 6px;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }
 
-.leftcolumn a.caption {
-    display: block;
-    color: white;
+/* Caption */
+.caption {
     font-family: Arial, sans-serif;
-    font-size: 100%;
+    font-size: 95%;
+    display: block;
+    margin-bottom: 25px;
+}
+.caption a {
+    color: white;
     text-decoration: underline;
-    margin-bottom: 15px;
 }
 
-/* LEFT TEXT */
+/* Kobe section */
 .leftcolumn h2 {
     font-family: Arial, sans-serif;
-    font-size: 120%;
-    margin-bottom: 15px;
+    font-size: 140%;
+    margin-bottom: 10px;
 }
 .leftcolumn p {
     font-family: Arial, sans-serif;
     font-size: 110%;
-    margin-bottom: 18px;
-    line-height: 1.45;
+    margin-bottom: 20px;
+    line-height: 1.4;
 }
 
-/* MAIN CONTENT */
+/* --- MAIN CONTENT --- */
 .mainContent {
     flex: 1;
     padding: 40px;
 }
-
 .mainContent h2 {
     font-family: Courier, monospace;
-    font-size: 160%;
-    margin-bottom: 30px;
+    font-size: 190%;
+    margin-bottom: 25px;
 }
-
 .mainContent p {
     font-family: Arial, sans-serif;
     font-size: 110%;
     margin-bottom: 25px;
     line-height: 1.55;
 }
+
+/* --- FOOTER --- */
+footer {
+    background: #0a1a45;
+    height: 40px;
+    border-top: 4px solid #061230;
+}
 </style>
 </head>
-
 <body>
 
 <header>
@@ -244,36 +241,53 @@ footer {
     <div class="leftcolumn">
 
         <!-- IMAGE 1 -->
-        <div class="imgBox">
-            <img src="kobeearthquake.png" alt="Image 1">
-            <a class="caption" href="#">Caption Link for Image 1</a>
-        </div>
+        <img src="kobeearthquake.png" alt="Collapsed highway in Kobe">
+        <span class="caption"><a href="#https://www.nippon.com/en/japan-data/h00629/25-years-after-disaster-looking-back-on-the-great-hanshin-awaji-earthquake.html">Collapsed highway in Kobe</a></span>
+
+        <!-- KOBE TEXT -->
+        <h2 id="Japan">Kobe 1995</h2>
+        <p  id="Reference_Japan" >
+            The Great Hanshin Earthquake struck Kobe on 17 January 1995 with a magnitude of 6.9,
+            causing over 6,400 deaths and severe ground shaking. Soil failure led to collapsed 
+            expressways and widespread infrastructure damage. Entire neighbourhoods were destroyed,
+            and many critical lifelines failed.
+        </p>
 
         <!-- IMAGE 2 -->
-        <div class="imgBox">
-            <img src="tundermassdampers.png" alt="Image 2">
-            <a class="caption" href="#">Caption Link for Image 2</a>
-        </div>
+        <img src="tundermassdampers.png" alt="Tuned Mass Dampers">
+        <span class="caption"><a href="#">Caption link for Image 2</a></span>
 
         <!-- IMAGE 3 -->
-        <div class="imgBox">
-            <img src="operationalmodalanalysis.png" alt="Image 3">
-            <a class="caption" href="#">Caption Link for Image 3</a>
-        </div>
-
-        <h2>Kobe 1995</h2>
-        <p>The Great Hanshin Earthquake struck Kobe on 17 January 1995 with a magnitude of 6.9, causing over 6,400 deaths and widespread destruction.</p>
+        <img src="operationalmodalanalyis.png" alt="Operational Modal Analysis">
+        <span class="caption"><a href="#https://www.crystalinstruments.com/blog/2018/5/18/operational-modal-analysis"</a>Visual for the Operational Modal Analysis</span>
 
     </div>
+
 
     <!-- MAIN CONTENT -->
     <div class="mainContent">
 
         <h2>Tuned Mass Dampers</h2>
 
-        <p>Tuned Mass Dampers (TMDs) are devices used in buildings and bridges to control excessive vibrations...</p>
-        <p>When the structure begins to sway... the TMD moves out of phase...</p>
-        <p>TMDs became widely adopted during the late 20th century...</p>
+        <p>
+            Tuned Mass Dampers (TMDs) are devices used in buildings and bridges to control 
+            excessive vibrations by counteracting motion at specific frequencies. A TMD typically 
+            consists of a large mass attached to the structure through springs and dampers. It is 
+            “tuned” so that its natural frequency matches the structure’s dominant vibration mode.
+        </p>
+
+        <p>
+            When the structure begins to sway due to wind, earthquakes, or traffic, the TMD moves 
+            out of phase, producing an equal and opposite force that reduces overall vibration. This 
+            motion dissipates energy as heat and improves comfort and safety.
+        </p>
+
+        <p>
+            TMDs became widely adopted during the late 20th century as buildings grew taller and 
+            more flexible. Modern TMDs may be passive, semi-active, or active, and are increasingly 
+            paired with digital monitoring systems to maintain tuning accuracy as structural 
+            properties evolve over time.
+        </p>
 
     </div>
 
