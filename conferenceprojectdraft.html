@@ -81,8 +81,8 @@ li a:hover {
 
         </div>
 
-        <!-- MAIN ABSTRACT TEXT (NORMAL SIZE RESTORED) -->
-        <p style="font-family:arial; font-size:110%; line-height:1.45;">
+        <!-- Abstract -->
+        <p id="Abstract_InText" style="font-family:arial; font-size:110%; line-height:1.45;">
             <b>Resonance</b> plays a critical role in the performance, safety, and longevity of modern 
             infrastructure. When a structure’s natural frequency aligns with external forces (such as wind, 
             seismic activity, or human motion), the resulting adjustment could result in catastrophic 
@@ -131,189 +131,172 @@ track changes in vibration. These technologies directly reflect lessons learned 
 
 <!-- KOBE PAGE -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    /* ---------- RESET ---------- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+<meta charset="UTF-8">
+<title>Reborn from the Great Hanshin Earthquake</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f7f7f7;
+        color: #000;
     }
 
-    /* ---------- PAGE WRAPPER (sets max width) ---------- */
-    .wrapper {
-      max-width: 1400px;
-      margin: 0 auto;
-      min-height: calc(100vh - 120px);
-      display: flex;
+    .header {
+        background-color: #0a1a3c;
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
     }
 
-    /* ---------- HEADER ---------- */
-    header {
-      background: #0a1a45;          /* deep navy blue */
-      padding: 25px 0;
-      text-align: center;
-      border-bottom: 4px solid #061230;
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        gap: 40px;
     }
 
-    header h1 {
-      font-family: "Times New Roman", serif;
-      font-size: 206%;
-      color: white;
-      letter-spacing: 2px;
+    .sidebar {
+        width: 30%;
+        background-color: #4fc3f7;
+        padding: 20px;
+        border-radius: 10px;
+        color: #fff;
     }
 
-    /* ---------- LEFT COLUMN ---------- */
-    .leftcolumn {
-      width: 330px;
-      background: #36cdf0;          /* slightly brighter blue */
-      padding: 20px;
-      color: white;
+    .sidebar img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
     }
 
-    .leftcolumn img {
-      width: 100%;
-      border-radius: 6px;
-      margin-bottom: 10px;
-      display: block;
+    .sidebar p a {
+        font-size: 0.78rem;
+        text-decoration: underline;
+        color: white;
     }
 
-    /* captions under the images in the left column */
-    .leftCaption {
-      font-family: Arial, sans-serif;
-      font-size: 90%;
-      text-align: center;
-      margin-bottom: 20px;
+    .content {
+        width: 70%;
     }
 
-    .leftcolumn h2 {
-      font-family: Arial, sans-serif;
-      font-size: 180%;
-      margin-bottom: 15px;
+    .content h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
     }
 
-    .leftcolumn p {
-      font-family: Arial, sans-serif;
-      font-size: 110%;
-      margin-bottom: 10px;
+    /* IMAGE SECTION */
+    .image-section {
+        margin-top: 40px;
+        text-align: center;
     }
 
-    /* ---------- MAIN CONTENT ---------- */
-    .mainContent {
-      flex: 1;
-      padding: 40px;
+    .image-section img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 6px;
+        display: block;
+        margin: 0 auto 10px auto;
     }
 
-    .mainContent h2 {
-      font-family: Courier, monospace;
-      font-size: 160%;
-      margin-bottom: 25px;
+    /* UPDATED SMALLER CAPTIONS */
+    .caption {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 0.75rem;
+        line-height: 1.2;
+        color: #333;
     }
 
-    .mainContent p {
-      font-family: Arial, sans-serif;
-      font-size: 110%;
-      margin-bottom: 25px;
-      line-height: 1.55;
+    .caption a {
+        color: #003399;
+        text-decoration: underline;
+        font-size: 0.75rem;
     }
-
-    /* ---------- FOOTER ---------- */
-    footer {
-      background: #0a1a45;
-      height: 40px;
-      border-top: 4px solid #061230;
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Reborn from the Great Hanshin Earthquake</h1>
-  </header>
+<div class="header">Reborn from the Great Hanshin Earthquake</div>
 
-  <!-- SIDEBY-SIDE WRAPPER -->
-  <div class="wrapper">
+<div class="container">
 
     <!-- LEFT SIDEBAR -->
-    <div class="leftcolumn">
+    <div class="sidebar">
+        <img src="kobeearthquake.png" alt="Kobe earthquake 1995">
 
-      <!-- First image + caption -->
-      <img src="kobeearthquake.png"
-           alt="Collapsed elevated highway after the 1995 Kobe earthquake">
-      <p class="leftCaption">
-        Collapsed elevated highway in Kobe after the 1995 earthquake.
-      </p>
+        <p>
+            <a href="https://www.nippon.com/en/in-depth/d01091/">
+                Collapsed elevated highway in Kobe after the 1995 earthquake.
+            </a>
+        </p>
 
-      <!-- Kobe text -->
-      <h2>Kobe 1995</h2>
-
-      <p>
-        The Great Hanshin Earthquake struck Kobe on 17 January 1995 with a
-        magnitude of 6.9, causing over 6,400 deaths and massive destruction to
-        buildings, highways, and rail systems.
-      </p>
-
-      <p>
-        Severe ground shaking and soil failure led to collapsed expressways and
-        widespread infrastructure damage. Entire neighbourhoods were destroyed,
-        and many critical lifelines failed.
-      </p>
-
-      <p>
-        The disaster prompted major reforms in Japan’s seismic design, including
-        improved damping, base isolation, and structural monitoring technologies,
-        which have since been applied across the country.
-      </p>
-
-      <!-- Second image + caption (same size as the first) -->
-      <img src="kobebridge.png"
-           alt="Modern bridge in Kobe with upgraded seismic design">
-      <p class="leftCaption">
-        Modern bridge in Kobe demonstrating improved seismic design.
-      </p>
-
+        <h2>Kobe 1995</h2>
+        <p id="Japan_InText">
+            The Great Hanshin Earthquake struck Kobe on 17 January 1995 with a magnitude of 6.9,
+            causing over 6,400 deaths and massive destruction to buildings, highways, and rail systems.
+            Severe ground shaking and soil failure led to collapsed expressways and widespread
+            infrastructure damage. Entire neighbourhoods were destroyed, and many critical lifelines failed.
+        </p>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div class="mainContent">
+    <!-- RIGHT CONTENT -->
+    <div class="content">
+        <h2>Tuned Mass Dampers</h2>
 
-      <h2>Tuned Mass Dampers</h2>
+        <p>
+            Tuned Mass Dampers (TMDs) are devices used in buildings and bridges to control excessive vibrations by 
+            counteracting motion at specific frequencies. A TMD typically consists of a large mass attached to the 
+            structure through springs and dampers. It is “tuned” so that its natural frequency matches the 
+            structure’s dominant vibration mode.
+        </p>
 
-      <p>
-        Tuned Mass Dampers (TMDs) are devices used in buildings and bridges to
-        control excessive vibrations by counteracting motion at specific
-        frequencies. A TMD typically consists of a large mass attached to the
-        structure through springs and dampers. It is “tuned” so that its natural
-        frequency matches the structure’s dominant vibration mode.
-      </p>
+        <p>
+            When the structure begins to sway due to wind, earthquakes, or traffic, the TMD moves out of phase, 
+            producing an equal and opposite force that reduces overall vibration. This motion dissipates energy as heat 
+            and improves comfort and safety.
+        </p>
 
-      <p>
-        When the structure begins to sway due to wind, earthquakes, or traffic,
-        the TMD moves out of phase, producing an equal and opposite force that
-        reduces overall vibration. This motion dissipates energy as heat and
-        improves comfort and safety.
-      </p>
+        <p>
+            TMDs became widely adopted during the late 20th century as buildings grew taller and more flexible. 
+            Modern TMDs may be passive, semi-active, or active, and are increasingly paired with digital monitoring 
+            systems to maintain tuning accuracy as structural properties evolve over time.
+        </p>
 
-      <p>
-        TMDs became widely adopted during the late 20th century as buildings
-        grew taller and more flexible. Modern TMDs may be passive, semi-active,
-        or active, and are increasingly paired with digital monitoring systems
-        to maintain tuning accuracy as structural properties evolve over time.
-      </p>
+        <!-- IMAGE SECTION BELOW MAIN TEXT -->
+        <div class="image-section">
 
-    </div><!-- /.mainContent -->
+            <!-- IMAGE 2 -->
+            <img src="tundermassdampers" alt="Tuned Mass Dampers">
+            <p class="caption">
+                <a href="https://practical.engineering/blog/2016/2/14/tuned-mass-dampers-in-skyscrapers">
+                   How Tuned Mass Dampers Work
+                </a>
+            </p>
 
-  </div><!-- /.wrapper -->
+            <!-- IMAGE 3 -->
+            <img src="operationalmodalanalysis" alt="Operational Modal Analysis">
+            <p class="caption">
+                <a href="https://www.crystalinstruments.com/blog/2018/5/18/operational-modal-analysis">
+                    Visual of Operational Modal Analysis
+                </a>
+            </p>
 
-  <!-- FOOTER -->
-  <footer></footer>
+        </div>
+
+    </div>
+</div>
 
 </body>
   
+<hr>
+  
 <!-- References -->
+  
   <div id="Reference_InText" style="width:100%; margin:0; padding:30px; box-sizing:border-box; background-color:#fff9c4; border-radius:0;">
     <h3 id="References" style="font-size:150%; font-family:courier; margin-bottom:20px;""><i>References</i></h3>
     <p style="font-family:merriweather; font-size:95%;">
