@@ -166,7 +166,7 @@ header h1 {
 
 /* --- LEFT COLUMN --- */
 .leftcolumn {
-    width: 330px;
+    width: 380px;   /* ← Bigger left column */
     background: #36cdf0;
     padding: 20px;
     color: white;
@@ -179,7 +179,7 @@ header h1 {
     margin-bottom: 5px;
 }
 
-/* Caption */
+/* Caption styling */
 .caption {
     font-family: Arial, sans-serif;
     font-size: 95%;
@@ -191,12 +191,15 @@ header h1 {
     text-decoration: underline;
 }
 
-/* Kobe section */
+/* Kobe heading */
 .leftcolumn h2 {
     font-family: Arial, sans-serif;
     font-size: 140%;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
+
+/* Kobe text */
 .leftcolumn p {
     font-family: Arial, sans-serif;
     font-size: 110%;
@@ -209,11 +212,13 @@ header h1 {
     flex: 1;
     padding: 40px;
 }
+
 .mainContent h2 {
     font-family: Courier, monospace;
     font-size: 190%;
     margin-bottom: 25px;
 }
+
 .mainContent p {
     font-family: Arial, sans-serif;
     font-size: 110%;
@@ -237,7 +242,7 @@ footer {
 
 <div class="wrapper">
 
-    <!-- LEFT COLUMN -->
+    <!-- LEFT SIDEBAR -->
     <div class="leftcolumn">
 
         <!-- IMAGE 1 -->
@@ -246,7 +251,7 @@ footer {
 
         <!-- KOBE TEXT -->
         <h2 id="Japan">Kobe 1995</h2>
-        <p  id="Reference_Japan" >
+        <p id="Japan_InText">
             The Great Hanshin Earthquake struck Kobe on 17 January 1995 with a magnitude of 6.9,
             causing over 6,400 deaths and severe ground shaking. Soil failure led to collapsed 
             expressways and widespread infrastructure damage. Entire neighbourhoods were destroyed,
@@ -254,17 +259,17 @@ footer {
         </p>
 
         <!-- IMAGE 2 -->
-        <img src="tundermassdampers.png" alt="Tuned Mass Dampers">
-        <span class="caption"><a href="#">Caption link for Image 2</a></span>
+        <img src="tunedermassdampers.png" alt="Tuned Mass Damper">
+        <span class="caption"><a href="#https://practical.engineering/blog/2016/2/14/tuned-mass-dampers-in-skyscrapers">Tuned Mass Dampers</a></span>
 
         <!-- IMAGE 3 -->
-        <img src="operationalmodalanalyis.png" alt="Operational Modal Analysis">
-        <span class="caption"><a href="#https://www.crystalinstruments.com/blog/2018/5/18/operational-modal-analysis"</a>Visual for the Operational Modal Analysis</span>
+        <img src="operationalmodalanalysis.g" alt="Operational Modal Analysis">
+        <span class="caption"><a href="#https://www.crystalinstruments.com/blog/2018/5/18/operational-modal-analysis">Caption link for Image 3</a>Visual for Operational Modal Analysis</span>
 
     </div>
 
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN CONTENT (Now Non-Clickable) -->
     <div class="mainContent">
 
         <h2>Tuned Mass Dampers</h2>
