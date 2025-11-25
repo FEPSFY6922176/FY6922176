@@ -82,16 +82,16 @@ li a:hover {
         </div>
 
         <!-- Abstract -->
-        <p id="Abstract_InText" style="font-family:arial; font-size:110%; line-height:1.45;">
+        <p style="font-family:arial; font-size:110%; line-height:1.45;">
             <b>Resonance</b> plays a critical role in the performance, safety, and longevity of modern 
             infrastructure. When a structure’s natural frequency aligns with external forces (such as wind, 
             seismic activity, or human motion), the resulting adjustment could result in catastrophic 
-            consequences, which can be prevented through new precautionary measures made before construction. 
+            consequences. They can be prevented through new precautionary measures made before construction. 
             This article examines the evolution of resonance awareness and mitigation strategies in civil 
             engineering through notable historical examples. Early disasters, including the calamitous 
             <i>1995 Kobe Earthquake</i><sup>[6]</sup> in Japan, ultimately lead to the adoption of aerodynamic deck 
-            designs, tuned mass dampers, and seismic isolation systems; Japan’s post-Kobe reconstruction 
-            ushered in a global shift toward performance-based design, where resonance is analyzed and 
+            designs, tuned mass dampers, and seismic isolation systems. Japan’s post-Kobe reconstruction 
+            ushered in a global shift toward performance-based design, where resonance is analysed and 
             controlled. This includes successes such as the Akashi Kaikyō Bridge, Tokyo Skytree, and Taipei 101, 
             demonstrating how the adoption of new protective measures has ensured our security. Through 
             comparative analysis of failed and successful designs, this study highlights how monitoring 
@@ -254,7 +254,7 @@ footer {
         <img src="kobeearthquake.png" alt="Collapsed highway in Kobe">
         <div class="caption">
             <a href="https://www.nippon.com/en/japan-data/h00629/25-years-after-disaster-looking-back-on-the-great-hanshin-awaji-earthquake.html" target="_blank">
-                Collapsed highway in Kobe
+                Figure 1: Collapsed highway in Kobe
             </a>
         </div>
 
@@ -271,7 +271,7 @@ footer {
         <img src="tunedermassdampers.png" alt="Tuned Mass Dampers">
         <div class="caption">
             <a href="https://practical.engineering/blog/2016/2/14/tuned-mass-dampers-in-skyscrapers" target="_blank">
-                Tuned Mass Dampers
+                Figure 2: Tuned Mass Dampers
             </a>
         </div>
 
@@ -279,10 +279,19 @@ footer {
         <img src="operationalmodalanalysis.png" alt="Operational Modal Analysis">
         <div class="caption">
             <a href="https://www.crystalinstruments.com/blog/2018/5/18/operational-modal-analysis" target="_blank">
-                Visual for Operational Modal Analysis
+                Figure 3: Visual for Operational Modal Analysis
             </a>
         </div>
 
+        <!-- IMAGE 4 -->
+        <img src="milleniumbridge.png" alt="the Millenium Bridge">
+        <div class="caption">
+            <a href="https://www.youtube.com/watch?v=y2FaOJxWqLE">
+                Figure 4: The Millennium Bridge
+            </a>
+        </div>
+
+      
     </div>
 
     <!-- MAIN CONTENT -->
@@ -303,13 +312,17 @@ footer {
             This motion dissipates energy as heat and improves comfort and safety.
         </p>
 
-        <p>
+        <p style = "margin-bottom:25px";>
             TMDs became widely adopted during the late 20th century as buildings grew taller and
             more flexible. Modern TMDs may be passive, semi-active, or active, and are increasingly
             paired with digital monitoring systems to maintain tuning accuracy as structural
             properties evolve over time.
         </p>
 
+      <h2>Operational Modal Analysis</h2>
+
+<p>Insert Paragraph here</p>
+      
     </div>
 
 </div>
@@ -323,29 +336,29 @@ footer {
   
 <!-- References -->
   
-  <div id="Reference_InText" style="width:100%; margin:0; padding:30px; box-sizing:border-box; background-color:#fff9c4; border-radius:0;">
+  <div style="width:100%; margin:0; padding:30px; box-sizing:border-box; background-color:#fff9c4; border-radius:0;">
     <h3 id="References" style="font-size:150%; font-family:courier; margin-bottom:20px;""><i>References</i></h3>
-    <p style="font-family:merriweather; font-size:95%;">
+    <p style="font-family:merriweather; font-size:95%; margin-bottom:15px;">
 [1] Yi-Zhe Song; C.R. Bowen; A.H. Kim; A. Nassehi; J. Padget; N. Gathercole (2019), <i>Virtual visual sensors and their application in structural health monitoring</i>
     </p>
 
-   <p style="font-family:merriweather; font-size:95%;">
+   <p style="font-family:merriweather; font-size:95%; margin-bottom:15px;">
 [2] Shen, Cunrui; Lu, Chihua (2024), <i>A Method to Obtain Frequency Response Functions of Operating Mechanical Systems Based on Experimental Modal Analysis and Operational Modal Analysis</i>
    </p>
 
-   <p style="font-family:merriweather; font-size:95%;">
+   <p style="font-family:merriweather; font-size:95%; margin-bottom:15px;">
 [3] Lin Chen; Xue Jiang; Pei Xiao; Xingzhao Liu; Martin Haardt (2025), <i>Structured Tensor Decomposition for FDD Massive MIMO Downlink Channel Reconstruction</i>
    </p>
 
-   <p style="font-family:merriweather; font-size:95%;">
+   <p style="font-family:merriweather; font-size:95%; margin-bottom:15px;">
 [4] Dionysius M. Siringoringo; Yozo Fujino (2006), <i>System identification of suspension bridge from ambient vibration response</i>
    </p>
 
-   <p style="font-family:merriweather; font-size:95%;">
+   <p style="font-family:merriweather; font-size:95%; margin-bottom:15px;">
 [5] Teplyshev, Vyacheslav; Mylnik, Alexey; Pushkareva, Maria; Agakhanov, Murad; Burova, Olga (2018), <i>Application of tuned mass dampers in high-rise construction</i>
    </p>
 
-   <p style="font-family:merriweather; font-size:95%;">
+   <p style="font-family:merriweather; font-size:95%; margin-bottom:15px;">
 [6] Aldrich, Daniel P (2011), <i>The power of people: social capital’s role in recovery from the 1995 Kobe earthquake</i>
    </p>
   
@@ -425,9 +438,7 @@ footer {
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const AbstractCount = displayWordCount("Abstract_InText");
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const ReferenceCount = displayWordCount("Reference_InText");
     const JapanCount = displayWordCount("Japan_InText");
     const DamperCount = displayWordCount("Damper_InText");
     // Calculate the sum of all selected sections
