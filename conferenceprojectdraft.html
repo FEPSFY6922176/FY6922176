@@ -442,7 +442,7 @@ footer {
     const JapanCount = displayWordCount("Japan_InText");
     const DamperCount = displayWordCount("Damper_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + IntroductionCount + ReferenceCount + JapanCount + DamperCount;
+    const totalWordCount = IntroductionCount + JapanCount + DamperCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
